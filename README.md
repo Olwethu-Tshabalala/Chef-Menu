@@ -1,4 +1,5 @@
 # Chef-Menu
+
 Chef Christoffel’s Menu App
 
 Author: Olwethu Tshabalala
@@ -7,65 +8,56 @@ Date: 6 September 2025
 
 Project Overview
 
-Chef Christoffel’s Menu App is a mobile application developed with React Native and TypeScript to help Chef Christoffel, a private chef, manage personalized menus efficiently.
+Chef Christoffel’s Menu App is a mobile application developed with React Native and TypeScript to help Chef Christoffel, a private chef, manage his personalized menus efficiently. Each evening brings a different menu, so the app allows the chef to quickly add, remove, and display dishes in a visually appealing and client-ready format.
 
-Since each evening may feature a different menu, the app allows the chef to:
-
-Quickly add new dishes
-
-Remove outdated items
-
-Display a polished, client-ready menu
-
-The app is cross-platform, working on both Android and iOS, and emphasizes usability, flexibility, and clean design. Data exists only for the session, allowing quick updates and resets.
+The app is designed to work on both Android and iOS, prioritizing usability, flexibility, and a clean design. Since it does not use permanent storage, menu data exists only for the session, allowing quick updates and resets.
 
 Key Features
-1. Home Screen
 
-Central hub displaying the current menu, total dishes, and average price
+Home Screen
 
-Navigation to add new dishes
+Central hub showing the current menu, total number of dishes, and average price.
 
-Consistent branding with the restaurant logo
+Navigation options to add new dishes.
 
-2. Add Menu Item Screen
+Displays the restaurant’s logo for branding consistency.
 
-Enter dish details: name, description, course type, price
+Add Menu Item Screen
 
-Predefined course categories via dropdown: Starters, Mains, Desserts, Beverages
+Allows entering details such as name, description, course type, and price.
 
-Automatically updates the Menu List Screen
+Course type is selected via a dropdown with predefined options: Starters, Mains, Desserts, Beverages.
 
-3. Menu List Screen
+Newly added items automatically appear in the Menu List screen.
 
-Review all selected dishes
+Menu List Screen
 
-Remove items as needed
+Displays all selected dishes with real-time updates on total cost.
 
-Real-time calculation of total menu cost
+Items can be removed as needed.
 
-4. Final Menu Screen
+Final Menu Screen
 
-Presents a client-ready menu with item names, prices, and total cost
+Presents a polished, client-ready menu with item names, prices, and total estimated cost.
 
-Consistent headers, breadcrumb navigation, and functional buttons
+Consistent headers, breadcrumb navigation, and functional buttons across all screens.
 
 Technical Implementation
 
-Navigation: Smooth transitions via React Navigation
+Navigation: React Navigation manages screen transitions smoothly.
 
-State Management: Temporary data handled with React useState
+State Management: Temporary data handled via React’s useState hook. Data is passed between screens through navigation parameters.
 
-Component Usage: <View>, <Text>, <Button>, <TextInput>, <FlatList>
+Components: Core React Native components like <View>, <Text>, <Button>, <TextInput>, and <FlatList> are used to build the interface.
 
-Dropdown Selection: Picker component for course type
+Dropdown Selection: The Picker component is used for course type selection.
 
-Styling: StyleSheet API ensures consistent UI across devices
+Styling: Applied via React Native’s StyleSheet API for consistent appearance across devices.
 
 Project Structure
 
-Screens: Dedicated files for Home, Add Menu Item, Menu List, and Final Menu
+Screens: Separate files for Home, Add Menu Item, Menu List, and Final Menu screens.
 
-Assets: Images, logos, and media files
+Assets: Contains images, logos, and other media files.
 
-Types: types.ts defines data shapes and screen navigation types, improving code reliability
+Types: types.ts defines menu item shapes and screen navigation types, enhancing code reliability and reducing errors.
