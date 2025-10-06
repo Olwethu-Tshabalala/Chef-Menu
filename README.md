@@ -2,69 +2,69 @@
 Chef Christoffel’s Menu App
 
 Author: Olwethu Tshabalala
-
 Date: 6 September 2025
 
 Project Overview
 
-Chef Christoffel’s Menu App is a mobile application developed with React Native and TypeScript to help Chef Christoffel, a private chef, manage his personalized menus efficiently. Each evening brings a different menu, so the app allows the chef to quickly add, remove, and display dishes in a visually appealing and client-ready format.
+Chef Christoffel’s Menu App is a mobile application developed with React Native and TypeScript to help Chef Christoffel, a private chef, manage personalized menus efficiently.
 
-The app is designed to work on both Android and iOS, prioritizing usability, flexibility, and a clean design. Since it does not use permanent storage, menu data exists only for the session, allowing quick updates and resets.
+Since each evening may feature a different menu, the app allows the chef to:
+
+Quickly add new dishes
+
+Remove outdated items
+
+Display a polished, client-ready menu
+
+The app is cross-platform, working on both Android and iOS, and emphasizes usability, flexibility, and clean design. Data exists only for the session, allowing quick updates and resets.
 
 Key Features
+1. Home Screen
 
-Home Screen
+Central hub displaying the current menu, total dishes, and average price
 
-Central hub showing the current menu, total number of dishes, and average price.
+Navigation to add new dishes
 
-Navigation options to add new dishes.
+Consistent branding with the restaurant logo
 
-Displays the restaurant’s logo for branding consistency.
+2. Add Menu Item Screen
 
-Add Menu Item Screen
+Enter dish details: name, description, course type, price
 
-Allows entering details such as name, description, course type, and price.
+Predefined course categories via dropdown: Starters, Mains, Desserts, Beverages
 
-Course type is selected via a dropdown with predefined options: Starters, Mains, Desserts, Beverages.
+Automatically updates the Menu List Screen
 
-Newly added items automatically appear in the Menu List screen.
+3. Menu List Screen
 
-Menu List Screen
+Review all selected dishes
 
-Displays all selected dishes with real-time updates on total cost.
+Remove items as needed
 
-Items can be removed as needed.
+Real-time calculation of total menu cost
 
-Final Menu Screen
+4. Final Menu Screen
 
-Presents a polished, client-ready menu with item names, prices, and total estimated cost.
+Presents a client-ready menu with item names, prices, and total cost
 
-Consistent headers, breadcrumb navigation, and functional buttons across all screens.
+Consistent headers, breadcrumb navigation, and functional buttons
 
 Technical Implementation
 
-Navigation: React Navigation manages screen transitions smoothly.
+Navigation: Smooth transitions via React Navigation
 
-State Management: Temporary data handled via React’s useState hook. Data is passed between screens through navigation parameters.
+State Management: Temporary data handled with React useState
 
-Components: Core React Native components like <View>, <Text>, <Button>, <TextInput>, and <FlatList> are used to build the interface.
+Component Usage: <View>, <Text>, <Button>, <TextInput>, <FlatList>
 
-Dropdown Selection: The Picker component is used for course type selection.
+Dropdown Selection: Picker component for course type
 
-Styling: Applied via React Native’s StyleSheet API for consistent appearance across devices.
+Styling: StyleSheet API ensures consistent UI across devices
 
 Project Structure
 
-Screens: Separate files for Home, Add Menu Item, Menu List, and Final Menu screens.
+Screens: Dedicated files for Home, Add Menu Item, Menu List, and Final Menu
 
-Assets: Contains images, logos, and other media files.
+Assets: Images, logos, and media files
 
-Types: types.ts defines menu item shapes and screen navigation types, enhancing code reliability and reducing errors.
-
-Outcome
-
-Developing this app provided a valuable experience in combining functional logic with intuitive design. It demonstrates proficiency in React Native, TypeScript, navigation, state management, and UI styling.
-
-A demonstration video of the app is available on YouTube (unlisted), and the full source code can be accessed on GitHub.
-
-If you want, I can also create a shorter, resume-friendly version of this description that emphasizes achievements and skills for potential employers or academic submissions. It would condense it to a single paragraph with key highlights.
+Types: types.ts defines data shapes and screen navigation types, improving code reliability
